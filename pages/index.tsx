@@ -1,11 +1,9 @@
 import type { NextPage } from "next";
-import dynamic from "next/dynamic";
-
-const Clock = dynamic(() => import("./components/Clock"), { ssr: false });
+import Clock from "./components/Clock";
 
 const Home: NextPage = () => {
   return (
-    <main className="w-full h-full flex justify-center items-center">
+    <main className="w-full h-full flex justify-center items-center background">
       <Clock />
     </main>
   );
